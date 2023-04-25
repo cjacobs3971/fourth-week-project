@@ -193,7 +193,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 // Get the high scores table body element from the DOM
 const tableBody = document.getElementById("table-body");
 
-// Loop through the high scores and create a row for each one. found online still figuring out
+// Loop through the high scores and create a row for each one. found online, moves through a table puting the items in correct spots
 highScores.forEach(function(score, index) {
 const row = document.createElement("tr");
 const rankCell = document.createElement("td");
