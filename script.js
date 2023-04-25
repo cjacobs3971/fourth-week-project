@@ -183,10 +183,26 @@ submitForm.addEventListener("submit", function(event) {
  submitForm.style.display = "none";
  message.style.display = "none";
  scoreboard.style.display = "block";
- //window.alert(JSON.stringify(highScores));
- //const listScores= JSON.stringify(highScores);
- //scoreTable.textContent = "scores: " + listScores;
- 
+ // Get the high scores from local storage
+const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+// Get the high scores table body element from the DOM
+const tableBody = document.getElementById("table-body");
+
+// Loop through the high scores and create a row for each one. found online still figuring out
+highScores.forEach(function(score, index) {
+const row = document.createElement("tr");
+const rankCell = document.createElement("td");
+rankCell.textContent = index + 1;
+row.appendChild(rankCell);
+const initialsCell = document.createElement("td");
+initialsCell.textContent = "initials: " + score.initials;
+row.appendChild(initialsCell);
+const scoreCell = document.createElement("td");
+scoreCell.textContent = "score: " + score.score;
+row.appendChild(scoreCell);
+tableBody.appendChild(row);
+});
 }
 
 // Add an event listener to the clear high scores button
@@ -207,26 +223,7 @@ playAgainButton.addEventListener("click", function() {
 window.location.reload();
 });
 
-// Get the high scores from local storage
-const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
-// Get the high scores table body element from the DOM
-const tableBody = document.getElementById("table-body");
-
-// Loop through the high scores and create a row for each one. found online still figuring out
-highScores.forEach(function(score, index) {
-const row = document.createElement("tr");
-const rankCell = document.createElement("td");
-rankCell.textContent = index + 1;
-row.appendChild(rankCell);
-const initialsCell = document.createElement("td");
-initialsCell.textContent = "initials: " + score.initials;
-row.appendChild(initialsCell);
-const scoreCell = document.createElement("td");
-scoreCell.textContent = "score: " + score.score;
-row.appendChild(scoreCell);
-tableBody.appendChild(row);
-});
 
 
 
