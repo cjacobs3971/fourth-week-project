@@ -98,6 +98,8 @@ function displayQuestion() {
                 message.style.display = "block";
                 message.textContent = "Correct!";
                 message.style.color = "green";
+                var audio = new Audio("./Main/assets/sfx/correct.wav");
+                audio.play();
                 // Move on to the next question
                 questionIndex++;
                 // If all questions have been answered, end the quiz
@@ -111,6 +113,8 @@ function displayQuestion() {
             message.style.display = "block";
             message.textContent = "Wrong!";
             message.style.color = "red";
+            var audio = new Audio("./Main/assets/sfx/incorrect.wav");
+            audio.play();
             timeLeft -= 10;
             // If time runs out, end the quiz
             if (timeLeft <= 0) {
