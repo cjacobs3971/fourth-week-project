@@ -1,31 +1,32 @@
 // Define quiz questions and answers
-const quiz = [
-    {
-      question: "What is the capital of France?",
-      choices: ["London", "Paris", "Berlin", "Madrid"],
-      answer: "Paris"
-    },
-    {
-      question: "What is the largest planet in our solar system?",
-      choices: ["Jupiter", "Saturn", "Neptune", "Earth"],
-      answer: "Jupiter"
-    },
-    {
-      question: "What is the tallest mammal?",
-      choices: ["Elephant", "Giraffe", "Hippopotamus", "Kangaroo"],
-      answer: "Giraffe"
-    },
-    {
-      question: "Whatis the smallest country in the world?",
-    choices: ["Vatican City", "Monaco", "San Marino", "Liechtenstein"],
-    answer: "Vatican City"
-    },
-    {
-    question: "What is the highest mountain in Africa?",
-    choices: ["Mount Everest", "Mount Kilimanjaro", "Mount Fuji", "Mount McKinley"],
-    answer: "Mount Kilimanjaro"
-    }
+const quiz = [  
+  {    
+    question: "What does HTML stand for?",    
+    choices: ["Hyper Text Markup Language", "Home Tool Markup Language", "Hyperlinks and Text Markup Language", "Hyper Text Markdown Language"],
+    answer: "Hyper Text Markup Language"
+  },
+  {
+    question: "What does CSS stand for?",
+    choices: ["Computer Style Sheets", "Creative Style Sheets", "Cascading Style Sheets", "Custom Style Sheets"],
+    answer: "Cascading Style Sheets"
+  },
+  {
+    question: "What does the acronym 'HTTP' stand for?",
+    choices: ["Hyper Text Transfer Order", "Hyper Text Transfer Protocol", "High Transmission Transfer Protocol", "High Text Transfer Protocol"],
+    answer: "Hyper Text Transfer Protocol"
+  },
+  {
+    question: "What does the acronym 'DNS' stand for?",
+    choices: ["Domain Name System", "Dynamic Network Service", "Data Naming Structure", "Direct Network Service"],
+    answer: "Domain Name System"
+  },
+  {
+    question: "What is the most popular programming language in the world?",
+    choices: ["Java", "Python", "C++", "JavaScript"],
+    answer: "JavaScript"
+  }
 ];
+
 
 // Set the initial values
 let questionIndex = 0;
