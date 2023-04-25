@@ -36,7 +36,15 @@ body {
   button:hover {
     background-color: #4f47c9;
   }
-  
+#characters img {
+  display: box; 
+  height: 200px;
+  padding-left: 100px;
+  padding-right: 10px;
+ 
+
+  }
+
   #timer {
     text-align: right;
     font-size: 32px;
