@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz Time</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz">
+    <h1>Quiz Time</h1>
+    <button id="start">Start</button>
+    <div id="timer"></div>
+    <div id="question"></div>
+    <div id="choices"></div>
+    <div id="message"></div>
+    <form id="submit-form">
+      <div id="your-score"></div>
+      <h2> </h2>
+      <label for="initials">Enter Your Initials: </label>
+      <input type="text" name="initials" id="initials" required>
+      <button type="submit">Save Score</button>
+    </form>
+    <div id="score-board">
+      <h2></h2>
+      <!--<div id="score-table"></div>
+      <h2></h2> -->
+      <table id = "table-body"></table>
+      <button id="play-again">Play Again</button>
+      <h2> </h2>
+      <button id = "clear-scores">Clear Scores</button>
+      </div>
+    <!--add a div scoreboard with top 10 scores (UL) a one input button for play again and another button for exit/clearscoresbutton-->
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

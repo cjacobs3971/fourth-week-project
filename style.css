@@ -1,0 +1,145 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+  }
+  
+  #quiz {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+    color: #6c63ff;
+  }
+  
+  button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4f47c9;
+  }
+  
+  #timer {
+    text-align: right;
+    font-size: 32px;
+    color: #6c63ff;
+  }
+  
+  #question {
+    margin-top: 20px;
+    font-size: 28px;
+    color: #4f47c9;
+  }
+  
+  #choices {
+    margin-top: 20px;
+  }
+  
+  #choices button {
+    display: block;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    font-size: 24px;
+    background-color: #f8f8f8;
+    color: #4f47c9;
+    border: 2px solid #4f47c9;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #choices button:hover {
+    background-color: #4f47c9;
+    color: #fff;
+  }
+  
+  #message {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #c82333;
+  }
+  
+  #submit-form {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  #your-score{
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+
+  }
+
+  #score-board{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+  }
+
+  #table-body{
+    margin: 0 auto;
+    width: 80%;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  
+  
+  label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: 2px solid #6c63ff;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: #6c63ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4f47c9;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: grey;
+    cursor: not-allowed;
+  }
+  
