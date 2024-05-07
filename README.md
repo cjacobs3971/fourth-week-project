@@ -7,7 +7,7 @@ Welcome to the Fun Web Dev Quiz! This quiz is designed to test your knowledge an
 To get started with the quiz, follow these steps:
 
 1. Clone this repository to your local machine.
-2. Open the `index.html` file in your web browser.
+2. Open the `index.html` file in your web browser on live server or any other means.
 3. Read each question carefully and select the correct answer.
 4. Submit your answers and see your score at the end.
 
